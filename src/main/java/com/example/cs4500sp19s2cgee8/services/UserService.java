@@ -13,17 +13,18 @@ public class UserService {
     static List<User> users = new ArrayList();
 
     static {
-        users.add(new User(456, "bob", "bob", "Bob", "Marley"));
         users.add(new User(123, "alice", "alice", "Alice", "Wonderland"));
         users.add(new User(234, "bob", "bob", "Bob", "Marley"));
 
     }
 
+    // Return the list of all users
     @GetMapping("/api/user")
     public List<User> findAllUsers() {
         return users;
     }
 
+    // Return a specific user given user Id
     @GetMapping("api/user/{userId}")
     public User findUserById(@PathVariable("userId") Integer id) {
         for (User user : users) {

@@ -15,33 +15,38 @@ public class User {
         this.firstName = firstName;
         this.lastName = lastName;
     }
-    // provide a public set and get method for each of the class variables above
-    // make sure to use proper naming conventions for Java methods, e.g.,
-    // methods should be camelcase. Here's an example using the firstName variable:
+    // User ID get and set
     public Integer getId() {
         return id;
     }
     public void setId(Integer id) {
         this.id = id;
     }
+
+    // User username get and set
     public String getUsername() {
-        return username;
-    }
+        return username; }
     public void setUsername(String username) {
         this.username = username;
     }
+
+    // User password get and set
     public String getPassword() {
         return password;
     }
     public void setPassword(String password) {
         this.password = password;
     }
+
+    // User first name get and set
     public String getFirstName() {
         return firstName;
     }
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
+
+    // User last name get and set
     public String getLastName() {
         return lastName;
     }
